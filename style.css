@@ -40,6 +40,7 @@ a {
     margin: 0 auto;
     border:1px solid red;
     display: flex;
+    align-items: center;
 }
 .plan {
     flex:1;
@@ -48,5 +49,15 @@ a {
     padding:20px;
     border-radius: 4px;
     text-align: center;
+    display:flex;
+    flex-wrap:wrap
+}
+
+.plan > * {
+    flex: 1 1 100%;
+}
+
+.plan .cta {
+    align-self:flex-end;
 }
  
